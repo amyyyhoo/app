@@ -1,0 +1,35 @@
+
+<ion-header color="dark">
+
+  <ion-navbar>
+    <ion-title>Your profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-label fixed>Username</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label fixed>Email</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label fixed>Contact details</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+    
+        <button ion-button full (click)="navigateToProducts()">Click to view products</button>
+        <button ion-button full (click)="navigateToLogout()">Click to logout</button>
+  
+</ion-content>
