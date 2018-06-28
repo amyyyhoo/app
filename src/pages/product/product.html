@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>product</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+        <ion-card *ngIf="product.id">
+            <img src="{{product.imageUrl}}"/>
+            <ion-card-content>
+        <div class="card-title">{{product?.name}}</div>
+      </ion-card-content>
+        </ion-card>
+  
+  <div>
+    <h1>{{product.name}}</h1>
+  </div>
+
+  <div>
+    <h2>{{product.price}}</h2>
+  </div>
+
+  <div>
+    {{product.description}}
+  </div>
+
+  <div>
+      <button ion-button full (click)="navigateToPayment()">Click to buy now!</button>
+  </div>
+</ion-content>

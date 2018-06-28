@@ -10,10 +10,11 @@ import { LoginPage } from '../pages/login/login';
 import { RegistrationPage } from '../pages/registration/registration';
 import { ProfilePage } from '../pages/profile/profile';
 import { ProductsPage } from '../pages/products/products';
-import { CookingPage } from '../pages/cooking/cooking';
-import { SwimmingPage } from '../pages/swimming/swimming';
-import { SingingPage } from '../pages/singing/singing';
-import { FishingPage } from '../pages/fishing/fishing';
+import { ProductPage } from '../pages/product/product';
+import { ProductService } from '../product.services/product.services';
+import { PaymentPage } from '../pages/payment/payment';
+import { PaidPage } from '../pages/paid/paid';
+import { TransactionhistoryPage } from '../pages/transactionhistory/transactionhistory';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,10 @@ import { FishingPage } from '../pages/fishing/fishing';
     RegistrationPage,
     ProfilePage,
     ProductsPage,
-    CookingPage,
-    SwimmingPage,
-    SingingPage,
-    FishingPage
+    ProductPage,
+    PaymentPage,
+    PaidPage,
+    TransactionhistoryPage
   ],
   imports: [
     BrowserModule,
@@ -40,14 +41,15 @@ import { FishingPage } from '../pages/fishing/fishing';
     RegistrationPage,
     ProfilePage,
     ProductsPage,
-    CookingPage,
-    SwimmingPage,
-    SingingPage,
-    FishingPage
+    ProductPage,
+    PaymentPage,
+    PaidPage,
+    TransactionhistoryPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    ProductService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

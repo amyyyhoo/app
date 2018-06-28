@@ -9,10 +9,20 @@
 
 
 <ion-content padding>
+<ion-list>
 
-    <button ion-button full (click)="navigateToFishing()">Fishing with locals  $24</button>
-    <button ion-button full color="secondary" (click)="navigateToSwimming()">Swimming with locals  $30</button>
-    <button ion-button full (click)="navigateToCooking()">Cooking with locals  $52</button>
-    <button ion-button full color="secondary" (click)="navigateToSinging()">Singing with locals  $12</button>
+    <button ion-item *ngFor="let product of products" (click)="navigateToProduct(product)">
+     <ion-thumbnail item-left>
+                    {{product.imageURL}}
+                </ion-thumbnail>
+                <h2>{{product.name}}</h2>
+                <p>{{product.description}}, {{product.price}}</p>
 
+</button>
+
+
+   
+
+</ion-list>
 </ion-content>
+

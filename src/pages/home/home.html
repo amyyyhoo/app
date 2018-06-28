@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar color="dark">
+  <ion-navbar color="light">
     <ion-title text-center class="vertical align-content">
       Welcome to the app
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+  <img src="../../assets/imgs/home_background.jpg">
   
   <ion-list>
+
     <button ion-button full (click)="navigateToLogin()">Click to login</button>
     <button ion-button full color="secondary" (click)="navigateToRegistration()">Click to register</button>
   </ion-list>
